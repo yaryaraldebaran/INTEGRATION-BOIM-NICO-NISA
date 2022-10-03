@@ -1,0 +1,412 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 03 11:50:51 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>137 seconds (137477 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mencari data trainer", "Cari Trainer dan Berpindah Halaman"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at cucumber.framework.runner.jcadmin.nico.JCAdminAboutFindAndMoveTrainerImpl.ab012p_admin_dapat_menemukan_data_trainer(JCAdminAboutFindAndMoveTrainerImpl.java:51)
+	at ?.AB012P Admin dapat menemukan data trainer(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/nico/005About004FindAndMoveTrainer.feature:9)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834056391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace834056391'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at cucumber.framework.runner.jcadmin.nico.JCAdminAboutFindAndMoveTrainerImpl.ab012p_admin_dapat_menemukan_data_trainer(JCAdminAboutFindAndMoveTrainerImpl.java:51)
+	at ?.AB012P Admin dapat menemukan data trainer(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/nico/005About004FindAndMoveTrainer.feature:9)
+</pre></div></td>
+<td>13</td>
+<td>cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico@bcec361</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit keunggulan2 di data pertama", "Rincian Biaya"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan2_dengan_keunggulan2(JCEditRincianBiayaImpl.java:150)
+	at ?.RI013P Admin mengedit keunggulan2 dengan trainer hebat dua(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1348421068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1348421068'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan2_dengan_keunggulan2(JCEditRincianBiayaImpl.java:150)
+	at ?.RI013P Admin mengedit keunggulan2 dengan trainer hebat dua(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:39)
+</pre></div></td>
+<td>4</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit harga awal di data pertama", "Rincian Biaya"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editHargaAwal(JCAdminRincianBiayaPage.java:138)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_harga_awal_dengan_harga_awal(JCEditRincianBiayaImpl.java:74)
+	at ?.RI011P Admin mengedit harga awal dengan 50000(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1620771868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620771868'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editHargaAwal(JCAdminRincianBiayaPage.java:138)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_harga_awal_dengan_harga_awal(JCEditRincianBiayaImpl.java:74)
+	at ?.RI011P Admin mengedit harga awal dengan 50000(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:15)
+</pre></div></td>
+<td>10</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit diskon di data pertama", "Rincian Biaya"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editDiskon(JCAdminRincianBiayaPage.java:146)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_diskon_dengan_diskon(JCEditRincianBiayaImpl.java:101)
+	at ?.RI012P Admin mengedit diskon dengan 30(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace306693934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace306693934'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editDiskon(JCAdminRincianBiayaPage.java:146)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_diskon_dengan_diskon(JCEditRincianBiayaImpl.java:101)
+	at ?.RI012P Admin mengedit diskon dengan 30(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:23)
+</pre></div></td>
+<td>10</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit keunggulan4 di data pertama", "Rincian Biaya"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan4_dengan_keunggulan4(JCEditRincianBiayaImpl.java:201)
+	at ?.RI013P Admin mengedit keunggulan4 dengan materi berkualitas empat(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1047868041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1047868041'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan4_dengan_keunggulan4(JCEditRincianBiayaImpl.java:201)
+	at ?.RI013P Admin mengedit keunggulan4 dengan materi berkualitas empat(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:55)
+</pre></div></td>
+<td>4</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit keunggulan5 di data pertama", "Rincian Biaya"</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at cucumber.framework.runner.jcadmin.boim.JCAdminHooks.setUp(JCAdminHooks.java:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1865233297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865233297'><pre>java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at cucumber.framework.runner.jcadmin.boim.JCAdminHooks.setUp(JCAdminHooks.java:34)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Berpindah halaman list trainer", "Cari Trainer dan Berpindah Halaman"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminAboutPage.pindahHalaman(JCAdminAboutPage.java:185)
+	at cucumber.framework.runner.jcadmin.nico.JCAdminAboutFindAndMoveTrainerImpl.ab013p_admin_menekan_tombol_halaman_trainer(JCAdminAboutFindAndMoveTrainerImpl.java:61)
+	at ?.AB013P Admin menekan tombol halaman trainer(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/nico/005About004FindAndMoveTrainer.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1329589315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1329589315'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminAboutPage.pindahHalaman(JCAdminAboutPage.java:185)
+	at cucumber.framework.runner.jcadmin.nico.JCAdminAboutFindAndMoveTrainerImpl.ab013p_admin_menekan_tombol_halaman_trainer(JCAdminAboutFindAndMoveTrainerImpl.java:61)
+	at ?.AB013P Admin menekan tombol halaman trainer(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/nico/005About004FindAndMoveTrainer.feature:12)
+</pre></div></td>
+<td>5</td>
+<td>cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico@bcec361</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit nama program di data pertama", "Rincian Biaya"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editNamaProgram(JCAdminRincianBiayaPage.java:130)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_nama_program_dengan_nama_program(JCEditRincianBiayaImpl.java:47)
+	at ?.RI010P Admin mengedit nama program dengan Pemrograman cucumber baru(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace529832633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace529832633'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editNamaProgram(JCAdminRincianBiayaPage.java:130)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_nama_program_dengan_nama_program(JCEditRincianBiayaImpl.java:47)
+	at ?.RI010P Admin mengedit nama program dengan Pemrograman cucumber baru(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:7)
+</pre></div></td>
+<td>18</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit keunggulan1 di data pertama", "Rincian Biaya"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editKeunggulan1(JCAdminRincianBiayaPage.java:154)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan1_dengan_keunggulan1(JCEditRincianBiayaImpl.java:126)
+	at ?.RI013P Admin mengedit keunggulan1 dengan dapat link kerja satu(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1172814713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172814713'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editKeunggulan1(JCAdminRincianBiayaPage.java:154)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan1_dengan_keunggulan1(JCEditRincianBiayaImpl.java:126)
+	at ?.RI013P Admin mengedit keunggulan1 dengan dapat link kerja satu(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:31)
+</pre></div></td>
+<td>10</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit keunggulan3 di data pertama", "Rincian Biaya"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan3_dengan_keunggulan3(JCEditRincianBiayaImpl.java:175)
+	at ?.RI013P Admin mengedit keunggulan3 dengan trainer berpengalaman tiga(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:47)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1959931357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959931357'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-8OTT66F&apos;, ip: &apos;10.0.0.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
+	at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
+	at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan3_dengan_keunggulan3(JCEditRincianBiayaImpl.java:175)
+	at ?.RI013P Admin mengedit keunggulan3 dengan trainer berpengalaman tiga(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:47)
+</pre></div></td>
+<td>4</td>
+<td>cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit nama peserta di data pertama", "Edit Testimonial"</td>
+<td></td>
+<td>12</td>
+<td>cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit isi testimonial", "Edit Testimonial"</td>
+<td></td>
+<td>12</td>
+<td>cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef</td></tr>
+<tr>
+<td title='cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa.runScenario()'><b>runScenario</b><br>Test class: cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mengedit gambar di data pertama", "Edit Testimonial"</td>
+<td></td>
+<td>21</td>
+<td>cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef</td></tr>
+</table><p>
+</body>
+</html>

@@ -67,7 +67,7 @@ public class JCAdminTestimonial extends JCAdminLoginPage {
 	private WebElement uploadUlang;
 	
 	public void tambahDataTestimonialPublish(String statss){
-		uploadFile("C:\\Users\\NEXSOFT\\Downloads\\shutterstock.jpeg");
+		uploadFile("C:\\Users\\NEXSOFT\\git\\INTEGRATION-BOIM-NICO-NISA\\INTEGRATION-BOIM-NICO-NISA\\src\\main\\resources\\gambarnisa\\catit.png");
 		Utils.delay(3, strDelay);
 		this.nama.sendKeys("Budi");
 		Utils.delay(3, strDelay);
@@ -96,7 +96,7 @@ public class JCAdminTestimonial extends JCAdminLoginPage {
 		
 		public void editGambar() {
 			uploadUlang.click();
-			uploadUlangAction("C:\\Users\\NEXSOFT\\Downloads\\aliando.jpeg");
+			uploadUlangAction("C:\\Users\\NEXSOFT\\git\\INTEGRATION-BOIM-NICO-NISA\\INTEGRATION-BOIM-NICO-NISA\\src\\main\\resources\\gambarnisa\\catit.png");
 			Utils.delay(3, strDelay);
 		}
 		

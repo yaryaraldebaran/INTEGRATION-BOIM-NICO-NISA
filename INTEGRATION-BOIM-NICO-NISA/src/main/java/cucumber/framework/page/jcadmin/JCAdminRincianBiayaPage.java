@@ -121,7 +121,7 @@ public class JCAdminRincianBiayaPage extends JCAdminLoginPage {
 	
 	// MENGEDIT DATA
 	public void editNamaProgram(String namaProgram) {
-		
+		Utils.delay(3, strDelay);
 		this.nama.click();
 		Utils.delay(3, strDelay);
 		clearField();

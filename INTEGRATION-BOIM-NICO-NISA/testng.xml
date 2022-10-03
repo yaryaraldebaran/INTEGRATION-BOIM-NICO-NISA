@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="cucumber.framework.runner.jcadmin.boim.JCAdminRunner"/>
-      <class name="cucumber.framework.runner.jcadmin.nisa.JCAdminRunner"/>
-      <class name="cucumber.framework.runner.jcadmin.nico.JCAdminRunner"/>
+    	<class name="cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa"></class>
+    	<class name="cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim"></class>
+    	<class name="cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico"></class>
     </classes>
   </test>
 </suite>  <!-- Suite -->
