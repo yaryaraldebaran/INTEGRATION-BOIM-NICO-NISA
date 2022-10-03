@@ -1,4 +1,4 @@
-package cucumber.framework.runner.jcadmin;
+package cucumber.framework.runner.jcadmin.boim;
 
 import java.io.IOException;
 
@@ -11,8 +11,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import cucumber.framework.connection.DriverSingleton;
 import cucumber.framework.constant.Constants;
-import cucumber.framework.scenariotest.hrms.HRMSSceneOutlineFix;
-import cucumber.framework.scenariotest.jcadmin.total.JCAdminTesting;
+import cucumber.framework.scenariotest.jcadmin.boim.JCAdminTesting;
 import cucumber.framework.utils.Utils;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
@@ -23,9 +22,9 @@ import io.cucumber.java.Scenario;
 public class JCAdminHooks {
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/jcadmin/extentreport/jcadmin-rincian-biaya.html");
+	public static ExtentReports reports = new ExtentReports("target/jcadmin/extentreport/jcadmin-boim.html");
 	private static JCAdminTesting[] tests = JCAdminTesting.values();
-	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,};
+	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1,1};
 	private String testReport = "";
 	
 	@Before

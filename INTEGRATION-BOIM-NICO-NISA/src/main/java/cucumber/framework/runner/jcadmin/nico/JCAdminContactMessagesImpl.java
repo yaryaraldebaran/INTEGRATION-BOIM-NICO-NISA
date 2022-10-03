@@ -1,4 +1,4 @@
-package cucumber.framework.runner.jcadmin;
+package cucumber.framework.runner.jcadmin.nico;
 
 public class JCAdminContactMessagesImpl {
 

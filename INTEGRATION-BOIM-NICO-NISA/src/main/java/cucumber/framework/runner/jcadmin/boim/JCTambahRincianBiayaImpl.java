@@ -1,8 +1,7 @@
-package cucumber.framework.runner.jcadmin;
+package cucumber.framework.runner.jcadmin.boim;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import com.relevantcodes.extentreports.ExtentTest;
@@ -28,34 +27,35 @@ public class JCTambahRincianBiayaImpl {
 		JCAdminRB = new JCAdminRincianBiayaPage();
 	}
 	
-	@Given("Admin login dan membuka halaman rincian biaya tambah")
-	public void admin_login_dan_membuka_halaman_rincian_biaya() {
+	@Given("^(.*) Admin login dan membuka halaman rincian biaya tambah$")
+	public void admin_login_dan_membuka_halaman_rincian_biaya(String kodeTest) {
 	    JCAdminRB.goToHome();
 	    JCAdminRB.goToRincianBiaya();
 	    extentTest.log(LogStatus.PASS, "admin login dan membuka halaman rincian biaya");
 	}
 
-	@When("Admin klik tombol tambah rincian ")
-	public void admin_klik_tombol_tambah() {
+	@When("^(.*) Admin klik tombol tambah$")
+	public void admin_klik_tombol_tambah(String kodeTest) {
 	    JCAdminRB.goToTambahRB();
 	    extentTest.log(LogStatus.PASS, "Admin klik tombol tambah");
 	}
 
-	@And("^Admin mengisi form tambah dengan publish (.*)$")
-	public void admin_mengisi_form_dengan_publish_active(String stat) {
+	@And("^(.*) Admin mengisi form tambah dengan publish (.*)$")
+	public void admin_mengisi_form_dengan_publish_active(String kodeTest,String stat) {
+		System.out.println(kodeTest);
 		JCAdminRB.tambahDataRincianBiayaPublish(stat);
 		extentTest.log(LogStatus.PASS, "Admin mengisi form tambah dengan publish "+stat);
 	}
 
-	@And("Admin menekan tombol simpan tambah rincian biaya")
-	public void admin_menekan_tombol_simpan() {
+	@And("^(.*)Admin menekan tombol simpan tambah$")
+	public void admin_menekan_tombol_simpan(String kodeTest) {
 //	    JCAdminRB.clickSimpan();
 		JCAdminRB.simpanTambah();
 		extentTest.log(LogStatus.PASS, "Admin menekan tombol simpan tambah");
 	}
 
-	@Then("Admin menambah rincian biaya active valid")
-	public void admin_menambah_rincian_biaya_active_valid() {
+	@Then("^(.*)Admin menambah rincian biaya active valid$")
+	public void admin_menambah_rincian_biaya_active_valid(String kodeTest) {
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {
