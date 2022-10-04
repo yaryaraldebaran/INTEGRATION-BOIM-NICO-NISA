@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cucumber.framework.runner.jcadmin.JCAdminRunner">
+      <class name="cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 19 20 21 6 22 7 23 8 12"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
-      </class> <!-- cucumber.framework.runner.jcadmin.JCAdminRunner -->
+      </class> <!-- cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

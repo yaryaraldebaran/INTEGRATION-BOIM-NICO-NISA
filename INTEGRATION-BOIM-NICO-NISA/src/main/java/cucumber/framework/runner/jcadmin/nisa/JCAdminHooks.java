@@ -1,5 +1,4 @@
 package cucumber.framework.runner.jcadmin.nisa;
-
 import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -22,9 +21,9 @@ import io.cucumber.java.Scenario;
 public class JCAdminHooks {
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
-	public static ExtentReports reports = new ExtentReports("target/jcadmin/extentreport/jcadmin-mafa.html");
+	public static ExtentReports reports = new ExtentReports("target/jcadmin/extentreport/jcadmin-nisa.html");
 	private static JCAdminTesting[] tests = JCAdminTesting.values();
-	private static final int[] DATA_OUTLINE = {1,1,1,1,1,1,1,1};
+	private static final int[] DATA_OUTLINE = {1,2,1,1,2,1,1,1,1,1,1,1,1};
 	private String testReport = "";
 	
 	@Before
@@ -44,7 +43,7 @@ public class JCAdminHooks {
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {
 		if(scenario.isFailed()) {
-			String screenshotPath = Utils.getScreenshot(driver, "HRMS_SceneOutlineHooks"+scenario.getName().replace(" ", "_"));
+			String screenshotPath = Utils.getScreenshot(driver, "JCAdmin_SceneOutlineHooks"+scenario.getName().replace(" ", "_"));
 			extentTest.log(LogStatus.FAIL, scenario.getName()+"\n"
 					+extentTest.addScreenCapture(screenshotPath));;
 		}

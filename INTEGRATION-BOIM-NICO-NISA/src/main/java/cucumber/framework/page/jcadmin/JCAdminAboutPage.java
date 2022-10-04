@@ -151,7 +151,7 @@ public class JCAdminAboutPage extends JCAdminLoginPage {
 	}
 	
 	public String getValidCari() {
-		Utils.delay(1, strDelay);
+		Utils.delay(3, strDelay);
 		return this.ambilProfilTrainer.getText();
 	}
 	

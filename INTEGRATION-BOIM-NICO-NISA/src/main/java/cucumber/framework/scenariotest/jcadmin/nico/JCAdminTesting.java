@@ -3,6 +3,7 @@ package cucumber.framework.scenariotest.jcadmin.nico;
 public enum JCAdminTesting {
 	N001("Membuka halaman about"),
 	N002("Menambah daftar trainer"),
+	N003("Menambah daftar trainer"),
 	N004("Mencari data trainer"),
 	N005("Berpindah halaman list trainer"),
 	N006("Mengedit data trainer publish"),

@@ -1,94 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="3" failed="10" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-03T11:50:51 ICT" name="Suite" finished-at="2022-10-03T11:53:08 ICT" duration-ms="137477">
+  <suite started-at="2022-10-03T14:14:08 ICT" name="Default suite" finished-at="2022-10-03T14:16:25 ICT" duration-ms="137335">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico@bcec361]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-10-03T11:50:51 ICT" name="Test" finished-at="2022-10-03T11:53:08 ICT" duration-ms="137477">
-      <class name="cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef]" started-at="2022-10-03T11:50:51 ICT" name="setUpClass" finished-at="2022-10-03T11:50:52 ICT" duration-ms="617" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@43fd77d8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef]" started-at="2022-10-03T11:50:52 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:51:13 ICT" duration-ms="21204" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Mengedit gambar di data pertama"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Edit Testimonial"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef]" started-at="2022-10-03T11:51:13 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:51:25 ICT" duration-ms="12653" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Mengedit nama peserta di data pertama"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Edit Testimonial"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef]" started-at="2022-10-03T11:51:25 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:51:38 ICT" duration-ms="12261" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Mengedit isi testimonial"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Edit Testimonial"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa@489115ef]" started-at="2022-10-03T11:51:38 ICT" name="tearDownClass" finished-at="2022-10-03T11:51:40 ICT" duration-ms="2236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.framework.runner.jcadmin.nisa.JCAdminRunnerNisa -->
+    <test started-at="2022-10-03T14:14:08 ICT" name="Default test" finished-at="2022-10-03T14:16:25 ICT" duration-ms="137335">
       <class name="cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:51:40 ICT" name="setUpClass" finished-at="2022-10-03T11:51:40 ICT" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:14:08 ICT" name="setUpClass" finished-at="2022-10-03T14:14:09 ICT" duration-ms="579" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@43fd77d8]]>
+                <![CDATA[org.testng.TestRunner@6a4a2090]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:51:40 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:51:58 ICT" duration-ms="18029" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:14:09 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:14:33 ICT" duration-ms="24369" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,38 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editNamaProgram(JCAdminRincianBiayaPage.java:130)
-at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_nama_program_dengan_nama_program(JCEditRincianBiayaImpl.java:47)
-at ✽.RI010P Admin mengedit nama program dengan Pemrograman cucumber baru(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:51:58 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:52:09 ICT" duration-ms="10984" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:14:33 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:14:47 ICT" duration-ms="13883" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,38 +50,10 @@ at ✽.RI010P Admin mengedit nama program dengan Pemrograman cucumber baru(file:
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editHargaAwal(JCAdminRincianBiayaPage.java:138)
-at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_harga_awal_dengan_harga_awal(JCEditRincianBiayaImpl.java:74)
-at ✽.RI011P Admin mengedit harga awal dengan 50000(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:52:09 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:52:20 ICT" duration-ms="10617" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:14:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:15:01 ICT" duration-ms="14084" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -189,38 +66,10 @@ at ✽.RI011P Admin mengedit harga awal dengan 50000(file:///C:/Users/NEXSOFT/gi
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editDiskon(JCAdminRincianBiayaPage.java:146)
-at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_diskon_dengan_diskon(JCEditRincianBiayaImpl.java:101)
-at ✽.RI012P Admin mengedit diskon dengan 30(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:23)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:52:20 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:52:30 ICT" duration-ms="10508" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:15:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:15:15 ICT" duration-ms="14369" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -233,38 +82,10 @@ at ✽.RI012P Admin mengedit diskon dengan 30(file:///C:/Users/NEXSOFT/git/INTEG
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.page.jcadmin.JCAdminRincianBiayaPage.editKeunggulan1(JCAdminRincianBiayaPage.java:154)
-at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan1_dengan_keunggulan1(JCEditRincianBiayaImpl.java:126)
-at ✽.RI013P Admin mengedit keunggulan1 dengan dapat link kerja satu(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:31)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:52:30 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:52:35 ICT" duration-ms="4980" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:15:15 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:15:32 ICT" duration-ms="16873" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,37 +98,10 @@ at ✽.RI013P Admin mengedit keunggulan1 dengan dapat link kerja satu(file:///C:
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan2_dengan_keunggulan2(JCEditRincianBiayaImpl.java:150)
-at ✽.RI013P Admin mengedit keunggulan2 dengan trainer hebat dua(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:39)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:52:35 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:52:40 ICT" duration-ms="4811" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:15:32 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:15:49 ICT" duration-ms="17290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -320,37 +114,10 @@ at ✽.RI013P Admin mengedit keunggulan2 dengan trainer hebat dua(file:///C:/Use
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan3_dengan_keunggulan3(JCEditRincianBiayaImpl.java:175)
-at ✽.RI013P Admin mengedit keunggulan3 dengan trainer berpengalaman tiga(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:47)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:52:40 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:52:45 ICT" duration-ms="4900" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:15:49 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:16:07 ICT" duration-ms="17682" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -363,37 +130,10 @@ at ✽.RI013P Admin mengedit keunggulan3 dengan trainer berpengalaman tiga(file:
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.runner.jcadmin.boim.JCEditRincianBiayaImpl.admin_mengedit_keunggulan4_dengan_keunggulan4(JCEditRincianBiayaImpl.java:201)
-at ✽.RI013P Admin mengedit keunggulan4 dengan materi berkualitas empat(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/boim/003RincianBiaya002MengeditRB.feature:55)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:52:45 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:52:45 ICT" duration-ms="64" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:16:07 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T14:16:23 ICT" duration-ms="15922" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -406,116 +146,14 @@ at ✽.RI013P Admin mengedit keunggulan4 dengan materi berkualitas empat(file://
               </value>
             </param>
           </params>
-          <exception class="java.lang.ArrayIndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 10 out of bounds for length 10]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
-at cucumber.framework.runner.jcadmin.boim.JCAdminHooks.setUp(JCAdminHooks.java:34)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@4e08711f]" started-at="2022-10-03T11:52:45 ICT" name="tearDownClass" finished-at="2022-10-03T11:52:47 ICT" duration-ms="2277" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim@1a677343]" started-at="2022-10-03T14:16:23 ICT" name="tearDownClass" finished-at="2022-10-03T14:16:25 ICT" duration-ms="2228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- cucumber.framework.runner.jcadmin.boim.JCAdminRunnerBoim -->
-      <class name="cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico@bcec361]" started-at="2022-10-03T11:52:47 ICT" name="setUpClass" finished-at="2022-10-03T11:52:47 ICT" duration-ms="27" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@43fd77d8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico@bcec361]" started-at="2022-10-03T11:52:47 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:53:01 ICT" duration-ms="13851" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Mencari data trainer"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Cari Trainer dan Berpindah Halaman"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at cucumber.framework.runner.jcadmin.nico.JCAdminAboutFindAndMoveTrainerImpl.ab012p_admin_dapat_menemukan_data_trainer(JCAdminAboutFindAndMoveTrainerImpl.java:51)
-at ✽.AB012P Admin dapat menemukan data trainer(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/nico/005About004FindAndMoveTrainer.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico@bcec361]" started-at="2022-10-03T11:53:01 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-03T11:53:06 ICT" duration-ms="5054" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Berpindah halaman list trainer"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Cari Trainer dan Berpindah Halaman"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-8OTT66F', ip: '10.0.0.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, executeScript {script=window.scrollBy(0,document.body.scrollHeight), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57442/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:481)
-at cucumber.framework.utils.Utils.fullScroll(Utils.java:49)
-at cucumber.framework.page.jcadmin.JCAdminAboutPage.pindahHalaman(JCAdminAboutPage.java:185)
-at cucumber.framework.runner.jcadmin.nico.JCAdminAboutFindAndMoveTrainerImpl.ab013p_admin_menekan_tombol_halaman_trainer(JCAdminAboutFindAndMoveTrainerImpl.java:61)
-at ✽.AB013P Admin menekan tombol halaman trainer(file:///C:/Users/NEXSOFT/git/INTEGRATION-BOIM-NICO-NISA/INTEGRATION-BOIM-NICO-NISA/src/main/resources/jcadmin/nico/005About004FindAndMoveTrainer.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico@bcec361]" started-at="2022-10-03T11:53:06 ICT" name="tearDownClass" finished-at="2022-10-03T11:53:08 ICT" duration-ms="2266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.framework.runner.jcadmin.nico.JCAdminRunnerNico -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

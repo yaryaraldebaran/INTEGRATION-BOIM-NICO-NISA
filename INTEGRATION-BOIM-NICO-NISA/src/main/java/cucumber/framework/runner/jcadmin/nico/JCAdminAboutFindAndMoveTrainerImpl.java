@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import cucumber.framework.constant.Constants;
 import cucumber.framework.page.jcadmin.JCAdminAboutPage;
+import cucumber.framework.utils.Utils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -48,7 +49,8 @@ public class JCAdminAboutFindAndMoveTrainerImpl {
 
 	@Then("AB012P Admin dapat menemukan data trainer")
 	public void ab012p_admin_dapat_menemukan_data_trainer() {
-	    assertTrue(JCAbout.getValidCari().contains("Anonim23"));
+		Utils.delay(3, strDelay);
+	    assertTrue(JCAbout.getValidCari().contains("nonim23"));
 	    extentTest.log(LogStatus.PASS, "AB004P Admin dapat menemukan data trainer");
 	}
 	
