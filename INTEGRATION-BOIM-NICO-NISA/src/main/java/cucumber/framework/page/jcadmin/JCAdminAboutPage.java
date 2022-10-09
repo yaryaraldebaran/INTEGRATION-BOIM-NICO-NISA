@@ -1,8 +1,10 @@
+
 package cucumber.framework.page.jcadmin;
 
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -38,7 +40,7 @@ public class JCAdminAboutPage extends JCAdminLoginPage {
 	private WebElement btnAbout;
 	@FindBy(linkText = "Tambah")
 	private WebElement btnTambahTrainer;
-	@FindBy(name = "cari")
+	@FindBy(xpath = "//input[@placeholder='Search Nama Peserta']")
 	private WebElement btnCariTrainer;
 	@FindBy(linkText = "3")
 	private WebElement pindahHalaman;
@@ -72,74 +74,110 @@ public class JCAdminAboutPage extends JCAdminLoginPage {
 	private WebElement editJabatanTrainer;
 	@FindBy(xpath = "//textarea[@name='isi_profil']")
 	private WebElement editProfileTrainer;
+	@FindBy(xpath = "//input[@value='Pilih Gambar Ulang']")
+	private WebElement editFotoTrainerOutline;
 
 	/*----- Validasi -----*/
 	@FindBy(xpath = "//h3[normalize-space()='List Trainer']")
 	private WebElement validAbout;
 	@FindBy(xpath = "//alert[@class='alert alert-success']")
 	private WebElement validTambah;
+	@FindBy(xpath = "//div[@class='alert alert-danger mt-2']")
+	private WebElement invalidInput;
+//	@FindBy(xpath = "//p[contains(text(),'NicoArdyTestPanjangggggggggggggggggggggggggggggggg')]")
+//	private WebElement validNamaLength;
+	@FindBy(xpath = "//figure[1]//a[1]//div[1]//p[2]")
+	private WebElement validNamaLength;
+	@FindBy(xpath = "//figure[1]//a[1]//div[1]//p[3]")
+	private WebElement validJabatanLength;
+//	@FindBy(xpath = "//p[contains(text(),'NicoArdyTestProfilePanjanggggggggggggggggggggggggg')]")
+//	private WebElement validProfileLength;
+	@FindBy(xpath = "//figure[1]//a[1]//div[1]//p[4]")
+	private WebElement validProfileLength;
+	@FindBy(xpath = "//div[@class='header']//p[1]")
+	private WebElement invalidImageType;
+	@FindBy(xpath = "//b[normalize-space()='Total Search : 0 Data']")
+	private WebElement invalidNamaLength;
 	
 
 	public void goToAbout() {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.btnAbout.click();
 	}
 	
 	public void tambahTrainer() {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.btnTambahTrainer.click();
 	}
 	
 	public void fotoTrainer(String foto) {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.tambahFotoTrainer.sendKeys(foto);
 	}
 	
+	public void tambahFotoTrainerAbs(String foto) {
+		File upFile = new File(foto);
+		String paste = upFile.getAbsolutePath();
+		Utils.delay(2, strDelay);
+		this.tambahFotoTrainer.sendKeys(paste);
+	}
+	
+	public void fotoTrainerOutline(String foto) {
+		Utils.littleScroll();
+		Utils.delay(2, strDelay);
+		this.editFotoTrainerOutline.click();
+		File upFile = new File(foto);
+		Utils.delay(2, strDelay);
+		Utils.uploadFoto(upFile);
+	}
+	
 	public void namaTrainer(String nama) {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.tambahNamaTrainer.sendKeys(nama);
 	}
 	
 	public void jabatanTrainer(String jabatan) {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.tambahJabatanTrainer.sendKeys(jabatan);
 	}
 	
 	public void profileTrainer(String profile) {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.tambahProfileTrainer.sendKeys(profile);
 	}
 	
 	public void statusTrainer(String status) {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		Select selc = new Select(this.tambahStatusPublish);
 		selc.selectByVisibleText(status);
 	}
 	
 	public void simpanData() {
 		Utils.fullScroll();;
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.btnSubmit.click();
 	}
 	
 	public String getValidAbout() {
-		Utils.delay(1, strDelay);
-		return this.validAbout.getText();
+		Utils.delay(2, strDelay);
+		return driverWaitTxt(driver, 10, validAbout);
 	}
 
 	public String getValidTambah() {
-		Utils.delay(1, strDelay);
-		return this.validTambah.getText();
+		Utils.delay(2, strDelay);
+		return driverWaitTxt(driver, 10, validTambah);
 	}
 	
 	
 	public void cariTrainer(String cari) {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
+		this.btnCariTrainer.click();
+		Utils.delay(2, strDelay);
 		this.btnCariTrainer.sendKeys(cari);
 	}
 	
 	public void tekanEnter() {
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		try {
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ENTER);
@@ -147,12 +185,11 @@ public class JCAdminAboutPage extends JCAdminLoginPage {
 		} catch (Exception e) {
 			System.out.println("Next");
 		}
-		
 	}
 	
 	public String getValidCari() {
-		Utils.delay(3, strDelay);
-		return this.ambilProfilTrainer.getText();
+		Utils.delay(2, strDelay);
+		return driverWaitTxt(driver, 10, ambilProfilTrainer);
 	}
 	
 	public void editDataTrainer() {
@@ -179,17 +216,31 @@ public class JCAdminAboutPage extends JCAdminLoginPage {
 		this.editProfileTrainer.sendKeys("Testing trainer baru");
 	}
 	
+	public void editNamaInvalid(String input) {
+		this.editNamaTrainer.clear();
+		this.editNamaTrainer.sendKeys(input);
+	}
+	
+	public void editJabatanInvalid(String input) {
+		this.editJabatanTrainer.clear();
+		this.editJabatanTrainer.sendKeys(input);
+	}
+	
+	public void editProfileInvalid(String input) {
+		this.editProfileTrainer.clear();
+		this.editProfileTrainer.sendKeys(input);
+	}
 	
 	
 	public void pindahHalaman() {
 		Utils.fullScroll();
-		Utils.delay(1, strDelay);
+		Utils.delay(2, strDelay);
 		this.pindahHalaman.click();
 	}
 	
 	public String getValidPindah() {
 		Utils.fullScroll();
-		return driverWaitTxt(driver, 5, validPindahHalaman);
+		return driverWaitTxt(driver, 10, validPindahHalaman);
 	}
 	
 	public void gantiStatus(String status) {
@@ -197,7 +248,31 @@ public class JCAdminAboutPage extends JCAdminLoginPage {
 	}
 	
 	public String getValidStatus() {
-		return driverWaitTxt(driver, 5, tambahStatusPublish);
+		return driverWaitTxt(driver, 10, tambahStatusPublish);
+	}
+	
+	public String getInvalidInput() {
+		return driverWaitTxt(driver, 10, invalidInput);
+	}
+	
+	public String getValidNamaTrainerLength() {
+		return driverWaitTxt(driver, 10, validNamaLength);
+	}
+	
+	public String getValidJabatanTrainerLength() {
+		return driverWaitTxt(driver, 10, validJabatanLength);
+	}
+	
+	public String getValidProfileTrainerLength() {
+		return driverWaitTxt(driver, 10, validProfileLength);
+	}
+
+	public String getInvalidNamaTrainerLength() {
+		return driverWaitTxt(driver, 10, invalidNamaLength);
+	}
+	
+	public String getInvalidImageType() {
+		return driverWaitTxt(driver, 10, invalidImageType);
 	}
 	
     //li[class='active page-item'] a[class='page-link']
